@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:background="#fff">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="example.saadat.com.ewldemo.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+        <ViewFlipper
+            android:id="@+id/viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:autoStart="true"
+            android:flipInterval="500"
+            android:foregroundGravity="center"
+            android:paddingTop="50dp"
+            android:animateFirstView="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ewl_logo" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/deal1" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/deal2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/deal3" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/deal4" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/deal5"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/deal6"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/deal7"/>
+
+        </ViewFlipper>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:id="@+id/apple_ban"
+            android:background="@drawable/apple"
+            android:layout_marginTop="5dp" />
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        custom:pager_animation_span="1100"
+        android:layout_height="270dp"
+        android:focusable="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/div"
+        android:layout_marginTop="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:focusableInTouchMode="true">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/tabview"
+        android:background="#e9f6ff"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:fillViewport="false"
+        android:focusable="true" />
+
+    </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="wrap_content"
+                android:layout_height="560dp"
+                android:id="@+id/viewpager" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:rowCount="1"
+                android:columnCount="5"
+                android:layout_marginTop="-10dp"
+                android:padding="-5dp"
+                android:background="#fff">
+
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/hm"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/menu_home"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pro"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/menu_product"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/wsh"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/menu_wish"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/crt"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/menu_cart"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/mrr"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/menu_more"
+                    android:padding="5dp"
+                    android:layout_marginLeft="-5dp" />
+
+            </GridLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>
